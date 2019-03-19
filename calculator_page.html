@@ -1,0 +1,92 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="formatting.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header id="pageHeader" class="class_header">
+        <h1 class="class_header">Calculator</h1>
+        <p class="class_header">Simple calculator.</p>
+        <hr />
+        <p></p>
+    </header>
+            <div id="calc">
+            <table>
+                <tr>
+                <th id="display" colspan="4">
+                    <b class="class_display">0</b>
+                </th>
+                    </tr>
+                <tr>
+                    <td id="clear" onclick="ClearAll()">
+                        <b>AC</b>
+                    </td>
+                    <td id="reverse" onclick="OperationReverse()">
+                        <b>+/-</b>
+                    </td>
+                    <td id="percentage" onclick="HandleInputOperator('perc')">
+                        <b>%</b>
+                    </td>
+                    <td id="divide" onclick="HandleInputOperator('div')">
+                        <b>÷</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="7" onclick="HandleInputNumber(7)">
+                        <b>7</b>
+                    </td>
+                    <td id="8" onclick="HandleInputNumber(8)">
+                        <b>8</b>
+                    </td>
+                    <td id="9" onclick="HandleInputNumber(9)">
+                        <b>9</b>
+                    </td>
+                    <td id="multiply" onclick="HandleInputOperator('mult')">
+                        <b>x</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="4" onclick="HandleInputNumber(4)">
+                        <b>4</b>
+                    </td>
+                    <td id="5" onclick="HandleInputNumber(5)">
+                        <b>5</b>
+                    </td>
+                    <td id="6" onclick="HandleInputNumber(6)">
+                        <b>6</b>
+                    </td>
+                    <td id="minus" onclick="HandleInputOperator('min')">
+                        <b>-</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="1" onclick="HandleInputNumber(1)">
+                        <b>1</b>
+                    </td>
+                    <td id="2" onclick="HandleInputNumber(2)">
+                        <b>2</b>
+                    </td>
+                    <td id="3" onclick="HandleInputNumber(3)">
+                        <b>3</b>
+                    </td>
+                    <td id="plus" onclick="HandleInputOperator('plus')">
+                        <b>+</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="0" colspan="2" onclick="HandleInputNumber(0)">
+                        <b>0</b>
+                    </td>
+                    <td id="." onclick="HandleInputComma()">
+                        <b>.</b>
+                    </td>
+                    <td id="equal" onclick="EqualsButton()">
+                        <b>=</b>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
